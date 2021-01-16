@@ -4,7 +4,7 @@ start:
   - mindreader
   flags:
     # Common configuration
-    log-to-file: false
+    log-to-file: true
     common-blocks-store-url: ./blocks/merged
     common-oneblock-store-url: ./blocks/one
 
@@ -14,8 +14,9 @@ start:
     mindreader-config-dir: ./mindreader
     mindreader-readiness-max-latency: 5s
     mindreader-snapshot-store-url: ./snapshots
-    mindreader-bootstrap-snapshot-name: "127365532_0797719c55b9d42b7d00c54512bfa1e31be650c56060765ae7f93cfbf2c0b282.bin"
-    mindreader-blocks-chan-capacity: 100000
+    # from: https://snapshots.testnet.telosunlimited.io/telos-testnet-20210110-blknum-87822005.tar.gz
+    mindreader-bootstrap-snapshot-name: "../srv/tn-telosunlimit/snapshots/snapshot-053c0eb5f012e7d649e33ecca79dcbdefffbf79c5dfc14fc98fe4447a156ab72.bin"
+    mindreader-blocks-chan-capacity: 1000000
     mindreader-start-failure-handler: false
     mindreader-log-to-zap: true
     mindreader-shutdown-delay: 20s
