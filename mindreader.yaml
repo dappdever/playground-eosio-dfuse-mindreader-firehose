@@ -1,6 +1,5 @@
 start:
   args:
-  - merger
   - mindreader
   flags:
     # Common configuration
@@ -16,7 +15,7 @@ start:
     mindreader-snapshot-store-url: ./snapshots
     # from: https://snapshots.testnet.telosunlimited.io/telos-testnet-20210110-blknum-87822005.tar.gz
     mindreader-bootstrap-snapshot-name: "../srv/tn-telosunlimit/snapshots/snapshot-053c0eb5f012e7d649e33ecca79dcbdefffbf79c5dfc14fc98fe4447a156ab72.bin"
-    mindreader-blocks-chan-capacity: 1000000
+    mindreader-blocks-chan-capacity: 100000
     mindreader-start-failure-handler: false
     mindreader-log-to-zap: true
     mindreader-shutdown-delay: 20s

@@ -1,0 +1,8 @@
+tart:
+  args:
+  - merger
+  flags:
+    # Common configuration
+    log-to-file: true
+    common-blocks-store-url: ./blocks/merged
+    common-oneblock-store-url: ./blocks/one
