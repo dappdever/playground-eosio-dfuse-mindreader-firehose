@@ -9,7 +9,7 @@ start:
 
     # Mindreader configuration (`mindreader-nodeos-api-addr` must first Nodeos config defined in `./mindreader/config.ini`)
     mindreader-manager-api-addr: :8080
-    mindreader-nodeos-api-addr: localhost:8888
+    mindreader-nodeos-api-addr: localhost:8889
     mindreader-config-dir: ./mindreader
     mindreader-readiness-max-latency: 5s
     mindreader-snapshot-store-url: ./snapshots

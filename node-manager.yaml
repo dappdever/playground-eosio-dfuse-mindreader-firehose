@@ -1,0 +1,8 @@
+start:
+  args:
+  - node-manager
+  flags:
+    # Common configuration
+    log-to-file: true
+    node-manager-config-dir: ../eosio2.0.5
+    node-manager-data-dir: ../eosio2.0.5/data

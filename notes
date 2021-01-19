@@ -1,0 +1,14 @@
+// start mind-reader, which wraps nodeos with the ability to create one blocks
+dfuseeos start -c mindreader.yaml -d run/mindreader -vvv
+
+// start merger, with the ability to merge blocks
+dfuseeos start -c merger.yaml  -vvv
+
+// start firehose, which serves the blocks via grpc
+dfuseeos start -c firehose.yaml -d run/firehose -vvv
+
+// start node-manager, which operates the producer node
+dfuseeos start -c node-manager -vvvv
+
+// check status of one and merged block directories
+ls one | wc -l && du -sh one && ls one | sort | tail -n1 && ls merged | wc -l && du -sh merged && ls merged | sort | tail -n1
